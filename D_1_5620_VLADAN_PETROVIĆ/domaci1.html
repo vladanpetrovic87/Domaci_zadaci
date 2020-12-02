@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moja web stranica</title>
+    <link rel="stylesheet" type="text/css" href="domaci.css">
 </head>
 <body>
     <h1>Ovo je moj naslov najveće veličine</h1>
@@ -15,21 +16,33 @@
 
     <div>
         <p>
-            Moje ime je <b>Vladan Petrović</b> i pohadjam PHP kurs programiranja <i>ITBootcamp-a.</i> 
+            Moje ime je <b>Vladan Petrović </b> i pohadjam <u> PHP kurs programiranja</u> <i>ITBootcamp-a.</i> 
+        </p>
+        <p class="plavo">
+            Ja sam iz Vranja, imam 33 godine i završio sam Ekonomski fakultet  Nišu, smer finansijski menadžment.
+        </p>
+        <p class="plavo">
+            Oženjen sam i imam dvoje dece.
         </p>
     </div>
 
-    
 
-    <!--U nastavku dajemo meni restorana Gaj-->
+    <!--U nastavku dajem meni restorana Gaj-->
 
     <hr>
 
     <img src="restoran.jpg" alt="Restoran Gaj">
-
-    <center>Meni restorana Gaj</center>
     
-    <ul>
+    <br><br><br>
+    
+    <span id="zeleno">
+        <center>Meni restorana Gaj</center>
+    </span>
+
+   <br>
+   <img src="http://restorangaj.rs/wp-content/uploads/2019/01/800x600slika-meni.jpg" alt="Unutrašnjost restorana Gaj">
+
+    <ol type="I">
         <li>Jelovnik
             <ol>
                 <li>
@@ -182,37 +195,42 @@
                 </li>
             </ol>
         </li>
-    </ul>
-
-    Kliknite <a href="https://restorangaj.rs/?page_id=942" target="_blank">ovde</a> za celokupnu popnudu jela iz naseg restorana.
-    <br>
-    Kliknite <a href="https://restorangaj.rs/?page_id=943" target="_blank">ovde</a> za celokupnu popnudu pića iz naseg restorana.
-    <br>
-
-    <img src="http://restorangaj.rs/wp-content/uploads/2019/01/800x600slika-meni.jpg" alt="Unutrašnjost restorana Gaj">
+    </ol>
 
     <br>
 
+    <div class="crveno">
+    Kliknite <a href="https://restorangaj.rs/?page_id=942" target="_blank">ovde</a> za celokupnu ponudu jela iz naseg restorana.
+    <br><br>
+    Kliknite <a href="https://restorangaj.rs/?page_id=943" target="_blank">ovde</a> za celokupnu ponudu pića iz naseg restorana.
+    <br><br>
     Kliknite <a href="restoran.html">ovde</a> za restoran.html stranicu.
+    </div>
 
+    <br><br>
     
-
-    
-
-
-
-    
-
-
-
-    
-
-
-
-
-
-
-
-
+    <table border= "2" align="center">
+        <tr>
+            <td>Naziv</td>
+            <td>Restoran Gaj</td>
+        </tr>
+        <tr>
+            <td>Adresa</td>
+            <td>Vojvode Stepe 571</td>
+        </tr>
+        <tr>
+            <td>Mesto</td>
+            <td>11000 Beograd</td>
+        </tr>
+        <tr>   
+            <td>Telefon</td>
+            <td>011/3949099</td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td>rezervacije@restorangaj.rs</td>
+        </tr>
+    </table>
+  
 </body>
 </html>

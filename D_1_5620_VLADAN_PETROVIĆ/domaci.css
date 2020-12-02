@@ -1,0 +1,37 @@
+.plavo {
+    color: blue;
+}
+
+#zeleno {
+    color: green;
+    font-size: 20pt;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+img {
+    float: right;
+    width: 500px;
+    height: 400px;
+}
+
+table {
+    background-color: rgb(192, 152, 104);
+    border-color: black;
+    font-weight: bold; 
+}
+
+body {
+    background-color: rgb(247, 202, 148);
+}
+
+.crveno {
+    color: red;
+    font-size: 14pt;
+    font-style: italic;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
