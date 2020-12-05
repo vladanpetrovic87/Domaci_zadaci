@@ -1,0 +1,95 @@
+.plavo {
+    color: blue;
+}
+
+.podvuceno {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#zeleno {
+    color: green;
+    font-size: 20pt;
+    font-family: comic sans-serif ;
+    font-weight: bold;
+    text-decoration: underline; 
+}
+
+img {
+    float: right;
+    width: 500px;
+    height: 400px;
+}
+
+table {
+    background-color: rgb(192, 152, 104);
+    border: 3px brown dashed;
+    font-weight: bold;
+    padding: 5px 5px; 
+    color: rgb(27, 87, 22);
+    animation: pokret1 6s infinite;
+}
+
+@keyframes pokret1 {
+    50% {border: 15px solid rgb(145, 27, 53);}
+}
+
+body {
+    background-color: rgb(247, 202, 148);
+}
+
+.crveno {
+    color: red;
+    font-size: 14pt;
+    font-style: italic;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.naslov {
+    border: 4px dotted red;
+    text-align: center;
+    color: seagreen;
+}
+
+.podnaslov {
+    color: yellow;
+    text-align: center;
+}
+
+.podnaslov1 {
+    text-align: right;
+    color: red;
+    font-family: cursive;
+}
+
+#paragraf {
+    color: rgb(184, 29, 55);
+    animation: shadow 7s infinite;
+    text-align: center;
+    font-size: 26px;
+}
+
+@keyframes shadow {
+    60% {text-shadow: 10px 20px 30px rgb(107, 18, 33);}
+  }
+
+.meni {
+    font-family: cursive;
+    color: rgb(197, 24, 188);
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+a:visited {
+    background-color: blue;
+}
+
+
+
+
+
