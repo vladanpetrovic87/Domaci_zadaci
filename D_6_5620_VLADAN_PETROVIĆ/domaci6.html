@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domaći zadatak broj 6</title>
+
+    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <h2>Responsive Forma</h2>
+    <p>
+        Promenite širinu prozora kako biste videli efekte forme.Kada je ekran manji od 600px, formu kreirati tako da se njeni elementi nalaze jedni ispod drugih.
+    </p>
+
+    <form action="">
+        <fieldset>
+            <div class="red">
+                <p>
+                    <label class="col-4">Ime i prezime</label>
+                    <input type="text" placeholder="Unesite svoje ime i prezime.."  class="col-8">
+                </p>
+            </div>
+
+            <div class="red">
+                <p>
+                    <label class="col-4">Pretražite</label>
+                    <input type="text" placeholder="&#128269 Pretražite.." class="col-8" id="search">
+                </p>
+            </div>
+
+            <div class="red">
+                <p>
+                    <label class="col-4">Zemlja</label>
+                    <select name="zemlja" id="" class="col-8">
+                        <option value="drzava">Italija</option>
+                        <option value="drzava">Španija</option>
+                        <option value="drzava">Francuska</option>
+                        <option value="drzava">Srbija</option>
+                    </select>
+                </p>
+            </div>
+
+            <div class="red" id="text">
+                <p>
+                    <label class="col-4">Opis</label>
+                    <textarea name="text" id="opis" cols="120" rows="10"    placeholder="Napišite neki opis.." class="col-8" ></textarea>
+                </p>
+            </div>
+            
+            <div class="red">
+                    <span class="col-10"></span>
+                    <button class="col-2">Potvrdite</button>
+                
+            </div>
+                
+        </fieldset>
+    </form>
+</body>
+</html>
