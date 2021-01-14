@@ -16,10 +16,10 @@
         } 
 
         $rez = $br1 . "&nbsp" . $aritmOperacija . "&nbsp" .  $br2 . "&nbsp" .  "=" . "&nbsp" . $rezultat;
-        return $rez;
+        echo $rez;   
     }
 
-        echo digitron(5, 8, "*");
+        digitron(2, 2, "+");
 
 
 ?>
