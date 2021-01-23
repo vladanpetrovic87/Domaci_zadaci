@@ -84,14 +84,12 @@
 
     function ljudi($brLjudi, $autobusi){
         $ukupnoSed = ukupnoSedista($autobusi);
-        foreach($autobusi as $sedista){
             if($ukupnoSed >= $brLjudi) {
                 return true;
             }
             else {
                 return false;
             }
-        }
     }
 
     if(ljudi(150, $autobusi)) {
