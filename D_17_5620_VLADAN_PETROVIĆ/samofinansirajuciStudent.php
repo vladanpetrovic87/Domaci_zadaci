@@ -4,6 +4,10 @@
 
     class SamofinansirajuciStudent extends Student{
 
+        public function __construct($ime, $osvojeniESPB, $prosOcena){
+            parent::__construct($ime, $osvojeniESPB, $prosOcena);
+        }
+
         function skolarina($espb) {
            if($this->prosOcena < 8){
                return 1900 * $espb;
