@@ -69,11 +69,11 @@ SELECT DISTINCT `zanr`
 FROM `filmovi` 
 
 --Selektovati sve filmove u obliku naslov (režiser).
-SELECT `naslov`, `reziser` 
-FROM `filmovi`
+SELECT CONCAT(`naslov` , ' (' , `reziser` , ')') AS "Naziv filma (reziser)"
+FROM `filmovi`;
 
 --Selektovati sve filmove u obliku naslov (režiser) – godina izdanja. Selektovane filmove sortirati rastuće prema godini izdanja.
-SELECT `naslov`, `reziser`, `god_izdavanja`
+SELECT CONCAT(`naslov` , ' (' , `reziser` , ')', '-' ,`god_izdavanja`) AS "Naziv filma (reziser) - godina izdanja"
 FROM `filmovi`
 ORDER BY `god_izdavanja` ASC;
 
