@@ -59,7 +59,7 @@ FROM `filmovi`
 WHERE `zanr`="drama";
 
 --Selektovati trojicu rezisera ciji filmovi imaju najbolje ocene.
-SELECT `reziser`, `ocena`
+SELECT DISTINCT `reziser`, `ocena`
 FROM `filmovi` 
 ORDER BY `ocena` DESC
 LIMIT 3;
