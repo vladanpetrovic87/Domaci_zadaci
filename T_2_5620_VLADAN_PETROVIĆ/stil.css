@@ -1,0 +1,108 @@
+body {
+    background-color: beige;
+}
+
+.col-5 img {
+    width: 300px;
+}
+
+.col-4 {
+    position: relative;
+    top: 150px;
+    height: 300px;
+}
+.col-4 img {
+    width: 300px;
+
+}
+
+.col-4 form {
+    position: absolute;
+    top: 0px;
+}
+
+.red {
+    width: 100%;
+    overflow: hidden;
+}
+
+header {
+    background-color: purple;
+    padding: 20px 10px;
+    color: white;
+}
+
+.col-5 {
+    position: relative;
+    top: 50px;
+    left: 20px;
+
+}
+.col-5 h1 {
+    color: purple;
+    font-size: 28px;
+}
+
+.col-5 p {
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    margin: 10px 20px;
+    color: purple;
+}
+
+.col-5 img {
+    margin: 20px;
+    position: absolute;
+    top: 130px;
+    left: -20px;
+}
+
+.col-5 img:hover {
+    opacity: 50%;
+}
+
+.col-5 img:active {
+    width: 50%;
+    height: 50%;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+    margin-left: 3px;
+    padding: 20px;
+}
+
+nav ul li {
+    background-color: purple;
+    padding: 20px;
+    margin: 7px;
+    color: white;
+}
+
+nav ul li:hover {
+    background-color: blueviolet;
+}
+
+.col-4 h2, form {
+    text-align: center;
+    color: purple;
+}
+
+.col-4 form {
+    margin: 80px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: purple;
+    position: fixed;
+    bottom: 0px;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+
