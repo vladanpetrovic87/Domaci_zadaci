@@ -1,0 +1,28 @@
+.tabela, .tabela td, .tabela th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 6px;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.tabela th {
+    background-color: rgb(243, 144, 16);
+    font-size: 22px;
+    color: rgb(139, 47, 47);
+}
+
+.tabela tr:nth-child(odd) {
+    background-color: rgb(189, 148, 94);
+    color: rgb(116, 65, 7);
+    font-size: 18px;
+}
+
+.tabela tr:nth-child(even) {
+    background-color: rgb(160, 138, 109);
+    color: rgb(204, 65, 10);
+    font-size: 18px;
+}
+
+
