@@ -1,0 +1,80 @@
+.tabela, .tabela td, .tabela th {
+    border: 2px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+    margin-left: 60px;
+}
+
+.tabela th {
+    background-color: rgb(235, 162, 28);
+    font-size: 20px;
+}
+
+.tabela tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+.tabela tr:nth-child(even) {
+    background-color: rgba(170, 157, 146, 0.973);
+}
+
+h1 {
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    color:red;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 38px;
+}
+
+h2 {
+    text-align: center;
+    color:red;
+    font-size: 70px;
+    margin-bottom: 90px;
+}
+
+h3 {
+    margin-left: 300px;
+    margin-top: 50px;
+    color:#450775;
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    background-color: rgb(190, 175, 154);
+}
+
+a {
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    background-color: #450775;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px #e1d5ed;
+
+}
+
+a:hover {
+    background-color: #220440;
+    transition: 0.3s ease-in;
+}
+
+a:active {
+    background-color: #230545;
+    box-shadow: 0 5px #e1d5ed;
+    transform: translateY(4px);
+}
+
+p {
+    margin-top: 30px;
+    margin-left: 10px;
+}
