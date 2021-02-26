@@ -69,6 +69,12 @@ ul.topnav li.right {
     margin-left: 7%;
 }
 
+.poruka {
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .font {
     font-size: 24px;
     margin-left: 7%;

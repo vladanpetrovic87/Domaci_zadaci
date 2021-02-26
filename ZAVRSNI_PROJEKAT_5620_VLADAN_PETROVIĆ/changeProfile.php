@@ -1,12 +1,13 @@
 <?php
     require_once "header.php";
     require_once "connection.php";
+    require_once "db_update1.php";
 
     $id = $_SESSION['id'];
 
     $validated = true;
-    $ime = $prezime = $pol = $datum = "";
-    $imeErr = $prezimeErr = $datumErr =  "";
+    $ime = $prezime = $pol = $datum = $bio =  "";
+    $imeErr = $prezimeErr = $datumErr = $bioErr =  "";
 
     $q = "SELECT * FROM profiles WHERE user_id = $id";
     $result = $conn->query($q);
@@ -15,6 +16,8 @@
     $prezime = $red['surname'];
     $pol = $red['gender'];
     $datum = $red['dob'];
+    $bio = $red['bio'];
+
 
     
     if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -23,6 +26,7 @@
         $prezime = ($_POST['prezime']);
         $datum = ($_POST['datum']);
         $pol = $_POST['pol'];
+        $bio = $_POST['bio'];
 
         if(empty($_POST["ime"])) {
             $prikazi = false;
@@ -71,10 +75,18 @@
          else {
              $datum = $_POST["datum"];
          }
+
+         if(empty($_POST["bio"])) {
+             $prikazi = false;
+             $bioErr =  "Morate uneti biografiju";
+         }
+         else {
+             $bio = $_POST["bio"];
+         }
     }
 
     if($validated) {
-        $sql = "UPDATE profiles SET name = '$ime', surname = '$prezime', dob = '$datum', gender = '$pol' WHERE user_id = $id;";
+        $sql = "UPDATE profiles SET name = '$ime', surname = '$prezime', dob = '$datum', gender = '$pol', bio = '$bio' WHERE user_id = $id;";
         $result = $conn->query($sql);
         
 
@@ -126,6 +138,11 @@
             <label class="font" for="">Date of birth:</label>
             <input type="date" name="datum" value="<?php echo $datum; ?>">
             <span class="error"><?php echo $datumErr; ?></span>
+        </p>
+        <p>
+            <label for="">Biografija: </label>
+            <textarea name="bio" id="" cols="30" rows="10" value="<?php echo $bio; ?>"></textarea>
+            <span class="error"><?php echo $bioErr; ?></span>
         </p>
         <p>
             <input type="submit" value="Submit">

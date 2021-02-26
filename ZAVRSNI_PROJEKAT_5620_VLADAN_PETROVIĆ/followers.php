@@ -61,7 +61,7 @@
         </tr>";
         foreach($result as $row) {
             echo "<tr>";
-            echo "<td>" . $row['name'] . $row['surname'] ."</td>";
+            echo "<td><a href='profile.php'>" . $row['name'] . $row['surname'] ."</a></td>";
             echo "<td>" . $row['username'] . "</td>";
             $friendId = $row['id'];
 
