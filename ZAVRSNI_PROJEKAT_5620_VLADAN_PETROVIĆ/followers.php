@@ -39,6 +39,10 @@
         }
     }
 
+    if(!empty($_GET['user_id'])) {
+        $friendId = $conn->real_escape_string($_GET['user_id']);
+    }
+
 
     $q = "SELECT u.id, u.username, p.name, p.surname
     FROM users AS u
@@ -61,9 +65,9 @@
         </tr>";
         foreach($result as $row) {
             echo "<tr>";
-            echo "<td><a href='profile.php'>" . $row['name'] . $row['surname'] ."</a></td>";
-            echo "<td>" . $row['username'] . "</td>";
             $friendId = $row['id'];
+            echo "<td><a href='profile.php?user_id=$friendId'>" . $row['name'] . ' ' . $row['surname'] ."</a></td>";
+            echo "<td>" . $row['username'] . "</td>";
 
             //Ispitujemo da li pratim korisnika
             $sql1 = "SELECT * FROM followers

@@ -59,7 +59,7 @@ ul.topnav li a.active {
   
 ul.topnav li.right {
     float: right;
-    padding: 10px;
+    /* padding: 10px; */
 }
   
 .error {
@@ -73,6 +73,7 @@ ul.topnav li.right {
     text-decoration: underline;
     font-weight: bold;
     font-style: italic;
+    font-size: 26px;
 }
 
 .font {
@@ -88,8 +89,8 @@ ul.topnav li.right {
 .tabela {
     margin-top: 10%;
     padding: 5px;
-    margin-left: 25%;
-    width: 50%;
+    margin-left: 15%;
+    width: 70%;
     color: #4f4f4f;
     background-color: white;
 }
@@ -142,6 +143,33 @@ form {
     margin-left: 30%;
 }
 
+.dugme {
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    background-color: #450775;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px #e1d5ed;
+    margin-top: 10%;
+    width: 30%;
+}
+
+.dugme:hover {
+    background-color: #220440;
+    transition: 0.3s ease-in;
+}
+
+.dugme:active {
+    background-color: #230545;
+    box-shadow: 0 5px #e1d5ed;
+    transform: translateY(4px);
+}
+
 
 /* Style inputs, select elements and textareas */
 input[type=text], input[type=date], input[type=password] {
@@ -165,6 +193,10 @@ label {
     display: inline-block;
     font-weight: bold;
   }
+
+.forma textarea {
+    margin-left: 7%;
+}
   
   /* Style the submit button */
 input[type=submit] {

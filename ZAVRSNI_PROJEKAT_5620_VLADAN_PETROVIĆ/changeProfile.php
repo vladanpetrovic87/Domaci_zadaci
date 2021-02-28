@@ -140,8 +140,8 @@
             <span class="error"><?php echo $datumErr; ?></span>
         </p>
         <p>
-            <label for="">Biografija: </label>
-            <textarea name="bio" id="" cols="30" rows="10" value="<?php echo $bio; ?>"></textarea>
+            <label class="font" for="">Biografija: </label>
+            <textarea name="bio" id="" cols="60" rows="5"><?php echo $bio; ?></textarea>
             <span class="error"><?php echo $bioErr; ?></span>
         </p>
         <p>

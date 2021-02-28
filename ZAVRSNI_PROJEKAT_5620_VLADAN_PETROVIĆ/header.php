@@ -25,8 +25,8 @@
                 <li><a href="followers.php">Friends</a></li>
                 <li><a href="changeProfile.php">Change profile</a></li>
                 <li><a href="changePass.php">Change password</a></li>
-                <li class="right text-light font-weight-bolder font-italic"><h5>Hello, <?php echo $_SESSION['full_name']; ?>!</h5></li>
                 <li><a href="logout.php">Logout</a></li>
+                <li class="right text-light font-weight-bolder font-italic"><h5>Hello, <?php echo $_SESSION['full_name']; ?>!</h5></li>
             </ul>
         </nav>
     </header>
